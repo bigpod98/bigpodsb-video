@@ -34,5 +34,5 @@ jobs:
       run: podman login ghcr.io -u bigpod98 -p ${{ secrets.GITHUB_TOKEN }}
     - name: push
       shell: bash
-      run: podman push ghcr.io/bigpod98/bigpodsb/alpha-${{ matrix.image_flavor }}:${{ matrix.major_version }}
+      run: podman push ghcr.io/bigpod98/bigpodsb-video-${{ matrix.image_flavor }}:${{ matrix.major_version }}
       
